@@ -25,3 +25,13 @@ document.write(12 > 3 != 3 < 12); // Displaying comparison
             document.write("<br>");
 
 document.write(typeof 23); // Displaying comparison
+
+            document.write("<br>");
+
+document.write(52 < 44); // Displaying comparison
+
+            document.write("<br>");
+
+document.write(30 > 110); // Displaying comparison
+
+            document.write("<br>");
