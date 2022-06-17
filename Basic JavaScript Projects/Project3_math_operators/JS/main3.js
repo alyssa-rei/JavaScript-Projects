@@ -28,6 +28,6 @@ function multiplication_function() { // Naming function
 }
 
 function modulus_Operator() { // Naming function
-    var modulus = 23 / 6; // Defining variable 
+    var modulus = 23 % 6; // Defining variable 
     document.getElementById("Mod").innerHTML = modulus; // Defining Element Id, value
 }
