@@ -1,31 +1,33 @@
-// GLOBAL VARIABLE
-var X = 10;
-function Add_numbers_1()    {
-    document.write(20 + X + "<br>");
-}
-function Add_numbers_2()    {
-    document.write(X + 20);
-}
-Add_numbers_1();
-Add_numbers_2();
-
-    document.write("<br><br><br>");
-
-
-// LOCAL VARIABLE
-function Add_numbers_1()    {
+// LOCAL VARIABLES
+function Add_numbers_3()    {
     var X = 10;
     document.write(20 + X + "<br>");
 }
+function Add_numbers_4()    {
+    var X = 11;
+    document.write(X + X);
+}
+Add_numbers_3();
+Add_numbers_4();
+
+    document.write("<br><br><br>");
+
+
+// GLOBAL VARIABLES
+var X = 10;
+var Y = 30;
+function Add_numbers_1()    {
+    document.write(20 + X + "<br>");
+}
 function Add_numbers_2()    {
-    document.write(X + 20);
+    document.write(X + Y);
 }
 Add_numbers_1();
 Add_numbers_2();
 
     document.write("<br><br><br>");
-
-
+    
+    
 // IF STATEMENT
 function myFunction()   {
     if (5>3)    {
