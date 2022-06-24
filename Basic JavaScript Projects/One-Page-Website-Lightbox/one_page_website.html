@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Voyage to the Stars</title>
+        <link rel="stylesheet" href="CSS/One_Page_Website.css">
+    </head>
+    
+    <body>
+        <center>
+            <h1 id="home" class="title">VOYAGE TO THE STARS</h1>
+                  
+            <!-- NAVIGATION -->
+            
+            <div>
+                <div>
+                    <a href="#home">HOME</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#gallery">GALLERY</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#stream">NASA LIVE STREAM</a>  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#rsvp">BOOK YOUR FLIGHT</a>
+                </div>
+            </div>
+            
+            <!-- END NAVIGATION -->
+            
+            
+            <br><br><br><br><br>
+            
+            
+            <!-- INTRODUCTION -->
+            
+            <div>
+                <div>
+                    <p style="font-family: Helvetica; font-style: italic; font-size: 30px; font-weight: 500; letter-spacing: 3px; text-shadow: 1px 1px 3px white;">TAKING LIFE BEYOND EARTH'S SURFACE</p>
+                    <p style="font-family: Helvetica; font-style: italic; font-size: 26px; font-weight: 500; letter-spacing: 3px; text-shadow: 1px 1px 3px white;">Feel the experience and explore new worlds...<br>
+                    Travel to space today!</p>
+                    </div>
+            </div>
+            
+            <!-- END INTRODUCTION -->
+
+            
+            <br><br><br><br><br>
+            
+            
+            <!-- GALLERY -->
+            <div id="gallery">
+                <h1 class="subtitle">GALLERY</h1>
+
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="column">
+                    <img src="Images/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="Images/thumbnail_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+            </div>
+  
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+            <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+                <img src="Images/photo_1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+                <img src="Images/photo_2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+                <img src="Images/photo_3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+                <img src="Images/photo_4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+                <img src="Images/photo_5.png" style="width:100%">
+            </div>
+  
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="Images/thumbnail_1.png" onclick="currentSlide(1)" alt=" ">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="Images/thumbnail_2.png" onclick="currentSlide(2)" alt=" ">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="Images/thumbnail_3.png" onclick="currentSlide(3)" alt=" ">
+            </div>
+  
+            <div class="column">
+                <img class="demo" src="Images/thumbnail_4.png" onclick="currentSlide(4)" alt=" ">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="Images/thumbnail_5.png" onclick="currentSlide(5)" alt=" ">
+            </div>
+
+            </div>
+            </div>
+            <br><a href="#home">RETURN TO TOP</a>
+            </div>
+                    
+            <!-- END GALLERY -->
+            
+            
+            <br><br><br><br><br>
+            
+            
+            <!-- NASA VIDEO -->
+            
+            <div id="stream">
+                <div>
+                    <h1 class="subtitle">NASA LIVE STREAM</h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br><a href="#home">RETURN TO TOP</a>
+            </div>
+            
+            <!-- END NASA VIDEO -->
+        
+            
+            <br><br><br><br><br>
+            
+            
+            <!-- RESERVATIONS -->
+            
+            <div id="rsvp">
+                <div style="background-color:darkblue; width: 30%; border: 3px solid white">
+                    <h1 class="subtitle">BOOK YOUR FLIGHT</h1>
+                    <form action="" method="get">
+                        <table style="text-align: right;">
+                            <tr>
+                                <th>First Name</th>
+                                <td><input type="text" name="First_Name"></td>
+                            </tr>
+                            <tr>
+                                <th>Last Name</th>
+                                <td><input type="text" name="Last_Name"></td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td><input type="text" name="phone"></td>
+                            </tr>
+                            <tr>
+                                <th>E&#45;mail</th>
+                                <td><input type="text" name="email"></td>
+                            </tr>
+                            <tr>
+                                <th>Destination</th>
+                                <td><select name="destination" id="destination">
+                                        <option value="leo">Low Earth Orbit</option>
+                                        <option value="polar">Polar Orbit</option>
+                                        <option value="sun">Sun-sychronous Orbit</option>
+                                        <option value="moon">Moon</option>
+                                        <option value="mars">Mars</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table><br>
+                        <input type="submit" value="Submit">
+                            </form><br>
+                </div>
+            </div>
+            
+            <!-- END RESERVATIONS -->
+        
+        </center>
+    </body>
+    <script src="JS/one_page_website.js"></script>
+    
+    
+    <br><br><br><br><br>
+    
+    
+    <footer>
+        <p style="text-align: center;">
+            &copy; 2022 Voyage to the Stars
+            <br><br><a href="#home">RETURN TO TOP</a>
+        </p>
+    </footer>
+</html>
