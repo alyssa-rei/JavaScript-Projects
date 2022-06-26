@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+
+
+
+    <script>
+        $(document).ready(function()   {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            // Hides paragraph 2 on click, using slide up animation,
+            // changes color of text to orange
+            $("#2").css({"color":"orange"}).click(function() {
+                $("#2").slideUp(700);
+            });
+            // Hides paragraph 3 on click, using fade out animation
+            $("#3").click(function()    {
+                $("#3").fadeOut(800);
+            });
+
+        });
+    </script>
+</html>
